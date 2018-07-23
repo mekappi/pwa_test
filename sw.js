@@ -20,9 +20,9 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
-        console.log('Opened cache');
+        console.log('Opened cache', urlsToCache);
         return cache.addAll(urlsToCache);
-      }).then(()=> self.skipWaiting())
+      })//.then(()=> self.skipWaiting())
   );
 });
 
