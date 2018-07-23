@@ -1,6 +1,6 @@
 var CACHE_NAME = 'my-site-cache-v1.00';
 var urlsToCache = [
-  '/',
+  './',
   './manifest.json',
   './images/icons/icon-72x72.png',
   './images/icons/icon-96x96.png',
